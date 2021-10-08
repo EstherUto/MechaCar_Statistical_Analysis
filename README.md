@@ -23,6 +23,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ```
 
 **_FIGURE 1. MPG Summary Statistics_**
+
 ![Summary_Statistics](https://user-images.githubusercontent.com/86085601/136634695-560c1a27-1336-43d1-84ed-55837412edd9.png)
 
 
@@ -35,6 +36,7 @@ Overall, based on the R-squared value, it can be said the linear model predicts 
 A basic statistics summary was created for the manufacturing lots using the `Suspension_Coil.csv` file provided. The resulting total summary and the summary per manufacturing lot is shown in figures 2 and 3 respectively.
 
 **_FIGURE 2. Total Summary_**
+
 ![Total_Summary](https://user-images.githubusercontent.com/86085601/136634716-4d283902-3784-4d5d-ada9-1319a48d4df1.png)
 
 
