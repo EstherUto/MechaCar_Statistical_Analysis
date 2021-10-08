@@ -23,6 +23,8 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ```
 
 **_FIGURE 1. MPG Summary Statistics_**
+![Summary_Statistics](https://user-images.githubusercontent.com/86085601/136634695-560c1a27-1336-43d1-84ed-55837412edd9.png)
+
 
 The r-squared value alone let's us know there is some good amount of correlation between the other variables and the mpg. The p-value results for all the variables lets us know that this is specifically for the *vehicle length* and *ground clearance*.
 
@@ -33,6 +35,9 @@ Overall, based on the R-squared value, it can be said the linear model predicts 
 A basic statistics summary was created for the manufacturing lots using the `Suspension_Coil.csv` file provided. The resulting total summary and the summary per manufacturing lot is shown in figures 2 and 3 respectively.
 
 **_FIGURE 2. Total Summary_**
+![Total_Summary](https://user-images.githubusercontent.com/86085601/136634716-4d283902-3784-4d5d-ada9-1319a48d4df1.png)
+
+
 **_FIGURE 3. Summary per Manufacturing Lot_**
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The total variance lets us know that there isn't there shouldn't be any issue, however, when looking into the details, manufacturing lot 3 is over that limit. It can be said that the cars being made in that lot should be revised and looked into.
