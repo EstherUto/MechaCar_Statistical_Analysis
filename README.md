@@ -5,6 +5,7 @@
 - [Linear Regression to Predict MPG](#linear-regression-to-predict-mpg)
 - [Summary Statistics on Suspension Coils](#summary-statistics-on-suspension-coils)
 - [T-Tests on Suspension Coils](#t-tests-on-suspension-coils)
+- [Study Design: MechaCar vs Competition](#study-design--mechacar-vs-competition)
 
 
 ## Overview of Project
@@ -66,7 +67,7 @@ The results from the test on all the manufacturing lots is shown in figure 4. Th
 
 **_FIGURE 4. T-Test (All Lots)_**
 
-![sample_lots_t-test](https://user-images.githubusercontent.com/86085601/136637582-1298df59-de66-4a32-9682-1e6d5fcf663a.png)
+<img width="398" alt="Lots_t-test" src="https://user-images.githubusercontent.com/86085601/136668946-d061b358-6f05-49fc-a90a-f103b99021b5.png">
 
 ### T-Test on Individual Manufacturing Lots
 
@@ -74,16 +75,17 @@ The results from the test performed on the individual lots is provided in the fo
 
 **_FIGURE 5. T-Test (Lot 1)_**
 
-![lot1_t-test](https://user-images.githubusercontent.com/86085601/136637589-356e78fb-05ea-4521-bfdc-c4623c22e5a6.png)
+<img width="398" alt="Lot_1_t-test" src="https://user-images.githubusercontent.com/86085601/136668999-be64752d-b9bd-4866-a8c7-7d7e9fa7e0b2.png">
+
 
 **_FIGURE 6. T-Test (Lot 2)_**
 
-![lot2_t-test](https://user-images.githubusercontent.com/86085601/136637595-8c90d810-a7db-4cac-8a8a-8f9ed20fa8f4.png)
+<img width="397" alt="Lot_2_t-test" src="https://user-images.githubusercontent.com/86085601/136669008-11ef8e96-d75d-4da5-be63-ffe36a0176c8.png">
 
 **_FIGURE 7. T-Test (Lot 3)_**
 
-![lot3_t-test](https://user-images.githubusercontent.com/86085601/136637604-5f671493-cdbc-4595-8144-7c3c9642207f.png)
+<img width="396" alt="Lot_3_t-test" src="https://user-images.githubusercontent.com/86085601/136669014-052374c4-df90-4e4c-9b90-5cdb6f383b06.png">
 
-
+## Study Design: MechaCar vs Competition
 
 

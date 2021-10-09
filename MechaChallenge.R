@@ -23,11 +23,8 @@ lot_summary <- SuspCoil_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean_
 
 # --- Performing a T-test analysis on Suspension_Coil data
 
-# creating a sample table
-sample_lots <- SuspCoil_data %>% sample_n(50)
-
 # t-test to check if the PSI across all manufacturing lots is statistically different from the population mean
-t.test(log10(sample_lots$PSI),mu=mean(log10(SuspCoil_data$PSI)))
+t.test(SuspCoil_data$PSI,mu=1500)
 
 # Determining if the PSI for each manufacturing lot is statistically different from the population mean
 # filtering and assigning manufacturing lots
@@ -36,16 +33,12 @@ lot2 <- subset(SuspCoil_data, Manufacturing_Lot == "Lot2")
 lot3 <- subset(SuspCoil_data, Manufacturing_Lot == "Lot3")
 
 # Lot 1 Sample t-test
-t.test(log10(lot1$PSI),mu=mean(log10(SuspCoil_data$PSI)))
+t.test(lot1$PSI,mu=1500)
 
 # Lot 2 Sample t-test
-t.test(log10(lot2$PSI),mu=mean(log10(SuspCoil_data$PSI)))
+t.test(lot2$PSI,mu=1500)
 
 # Lot 3 Sample t-test
-t.test(log10(lot3$PSI),mu=mean(log10(SuspCoil_data$PSI)))
-
-
-
-
+t.test(lot3$PSI,mu=1500)
 
 #-------------- end of code -------------#
