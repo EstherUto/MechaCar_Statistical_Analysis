@@ -1,6 +1,11 @@
 # MechaCar Statistical Analysis
 
 ## Table of Contents
+- [Overview of Project](#overview-of-project)
+- [Linear Regression to Predict MPG](#linear-regression-to-predict-mpg)
+- [Summary Statistics on Suspension Coils](#summary-statistics-on-suspension-coils)
+- [T-Tests on Suspension Coils](#t-tests-on-suspension-coils)
+
 
 ## Overview of Project
 
@@ -42,6 +47,43 @@ A basic statistics summary was created for the manufacturing lots using the `Sus
 
 **_FIGURE 3. Summary per Manufacturing Lot_**
 
+![Summary_per_Manufacturing_lot](https://user-images.githubusercontent.com/86085601/136634942-e11c53c4-ac08-498c-9131-66350312e8a0.png)
+
+
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The total variance lets us know that there isn't there shouldn't be any issue, however, when looking into the details, manufacturing lot 3 is over that limit. It can be said that the cars being made in that lot should be revised and looked into.
+
+## T-Tests on Suspension Coils
+
+T-tests were performed to determine if all the manufacturing lots and each individual lot are statistically different from the population mean. For the testing,
+- null hypothesis H<sub>0</sub> is there isn't any statistical difference of the manufacturing lots PSI from the population mean
+- alternative hypothesis H<sub>A</sub> is there is some sort of statistical difference of the manufacturing lots PSI from the population mean
+
+For the tests, a significance value of 5% was chosen.
+
+### T-Test on All Manufacturing Lots
+
+The results from the test on all the manufacturing lots is shown in figure 4. The p-value was found to be ~ 0.11 which is greater than the chosen significance value of 0.05 which means we would fail to reject the null hypothesis
+
+**_FIGURE 4. T-Test (All Lots)_**
+
+![sample_lots_t-test](https://user-images.githubusercontent.com/86085601/136637582-1298df59-de66-4a32-9682-1e6d5fcf663a.png)
+
+### T-Test on Individual Manufacturing Lots
+
+The results from the test performed on the individual lots is provided in the following three images. The resulting p-values for each lot shows that Lot 1 and Lot 2 reject the null hypothesis, however, the p-value of Lot 3 fails to do so.
+
+**_FIGURE 5. T-Test (Lot 1)_**
+
+![lot1_t-test](https://user-images.githubusercontent.com/86085601/136637589-356e78fb-05ea-4521-bfdc-c4623c22e5a6.png)
+
+**_FIGURE 6. T-Test (Lot 2)_**
+
+![lot2_t-test](https://user-images.githubusercontent.com/86085601/136637595-8c90d810-a7db-4cac-8a8a-8f9ed20fa8f4.png)
+
+**_FIGURE 7. T-Test (Lot 3)_**
+
+![lot3_t-test](https://user-images.githubusercontent.com/86085601/136637604-5f671493-cdbc-4595-8144-7c3c9642207f.png)
+
+
 
 
