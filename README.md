@@ -16,7 +16,7 @@ The purpose of this project is to perform data analysis on a prototype car calle
 - running t-tests to determine if the manufacturing lots are statistically different and,
 - Designing a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers.
 
-Two data files were provided for this stidy and can be found in the `Resources` folder.
+Two data files were provided for this study and can be found in the `Resources` folder.
 
 All statistical analysis were performed using R programming language.
 
@@ -32,8 +32,9 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ![Summary_Statistics](https://user-images.githubusercontent.com/86085601/136634695-560c1a27-1336-43d1-84ed-55837412edd9.png)
 
-
 The r-squared value alone let's us know there is some good amount of correlation between the other variables and the mpg. The p-value results for all the variables lets us know that this is specifically for the *vehicle length* and *ground clearance*.
+
+The linear model slope varied for each variable. The slope values for the the model relative to vehicle weight and ground clearance is seen to be result in a positive correlation and a slope not equal to 0. The AWD slope shows there is some sort of negative correlation. However, the vehicle weight and spoiler angle slopes are close to 0. It can be said that overall, the slope of the linear model is not equal to 0. 
 
 Overall, based on the R-squared value, it can be said the linear model predicts the mpg of MechaCar prototypes effectively. This is because the higher the R-squared value, the higher the chances the rest of the data is correlated to the mpg and with the result number of 0.71, it is safe to say there is a good amount of dependency.
 
@@ -55,15 +56,13 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 ## T-Tests on Suspension Coils
 
-T-tests were performed to determine if all the manufacturing lots and each individual lot are statistically different from the population mean. For the testing,
-- null hypothesis H<sub>0</sub> is there isn't any statistical difference of the manufacturing lots PSI from the population mean
-- alternative hypothesis H<sub>A</sub> is there is some sort of statistical difference of the manufacturing lots PSI from the population mean
-
-For the tests, a significance value of 5% was chosen.
+T-tests were performed to determine if all the manufacturing lots and each individual lot are statistically different from the population mean. For the tests, a significance value of 5% was chosen. 
+- The null hypothesis for the testing is the sample mean is equal to the population mean of 1500 therefore is representative of the population. 
+- The alternative hypothesis is the sample mean is not equal to the population mean therefor not representative of the population. 
 
 ### T-Test on All Manufacturing Lots
 
-The results from the test on all the manufacturing lots is shown in figure 4. The p-value was found to be ~ 0.11 which is greater than the chosen significance value of 0.05 which means we would fail to reject the null hypothesis
+The results from the test on all the manufacturing lots is shown in figure 4. The p-value of 0.06 is greater than the significant value of 0.05 meaning we fail to reject the null hypothesis. This means overall, the sample of all the lots is possible representaive of the population.
 
 **_FIGURE 4. T-Test (All Lots)_**
 
@@ -71,7 +70,7 @@ The results from the test on all the manufacturing lots is shown in figure 4. Th
 
 ### T-Test on Individual Manufacturing Lots
 
-The results from the test performed on the individual lots is provided in the following three images. The resulting p-values for each lot shows that Lot 1 and Lot 2 reject the null hypothesis, however, the p-value of Lot 3 fails to do so.
+The results from the test performed on the individual lots is provided in the following three images. The resulting p-values for each lot shows that Lot 1 and Lot 2 fail to reject the null hypothesis, however, the p-value of Lot 3 rejects the null hypothesis. This means the Lot 1 and Lot 2 samples are better representative of the population in comparison to lot 3.
 
 **_FIGURE 5. T-Test (Lot 1)_**
 
@@ -88,4 +87,12 @@ The results from the test performed on the individual lots is provided in the fo
 
 ## Study Design: MechaCar vs Competition
 
+A study design to advertise the benefit of consumers purchasing a MechaCar over car competitors has been requested by the client. To develop the best study, data such as the cost similar cars, fuel consumption, horse power, maintenance costs, aesthetics, how loud the car is, rolling resistance, average life expectancy amongst others.
 
+To focus on what would appeal most to customers, the starting metrics to focus on could be fuel consumption in comparison to competitors.
+
+The null hypothesis would be "The MechaCar's performance cannot be seen fully with how low the car's fuel consumption is". The alternative hypothesis would be "The MechaCar's performance can be seen fully with how low the car's fuel consumption is".
+
+The best statistical test to test the hypothesis would be a single linear regression as it tells us how much the variance of the dependent variable (car performance) can be predicted by the variance of the independent variable (fuel consumption).
+
+The data needed to run the test would be for each unit, what is the fuel consumption and the overall car performance.
